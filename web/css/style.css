@@ -1,0 +1,11 @@
+/*======Body======*/
+
+
+/*======Footer======*/
+footer {
+	display: flex;
+}
+
+footer div{
+	border: 1px solid black;
+}

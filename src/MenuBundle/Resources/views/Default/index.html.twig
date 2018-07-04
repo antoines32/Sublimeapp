@@ -1,0 +1,13 @@
+<ul>
+	{% for key, value in listemenu %}
+		{% if value is iterable %}
+			<li>Tickets<div><ul>
+				{% for key1, item1 in value %}
+					<li><a href="http://127.0.0.1:8000/{{ key1 }}">{{ item1 }}</a></li>
+				{% endfor %}
+			</ul></div></li>
+		{% else %}
+			<li><a href="http://127.0.0.1:8000/{{ key }}">{{ value }}</a></li>
+		{% endif %}
+	{% endfor %}
+</ul>

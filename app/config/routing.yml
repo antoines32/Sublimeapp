@@ -1,0 +1,23 @@
+legal:
+    resource: "@LegalBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+societe:
+    resource: "@SocieteBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+menu:
+    resource: "@MenuBundle/Controller/"
+    
+    prefix:   /
+
+website:
+    resource: "@WebsiteBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

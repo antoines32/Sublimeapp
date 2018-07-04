@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Sublime inc.{% endblock %}</title>
+        {% block stylesheets %}<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css')}}">{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <nav>{{ render(controller('MenuBundle:Default:index', {})) }}</nav>
+        {% block body %}{% endblock %}
+        
+        <footer>
+            <div>
+                <h3>Azerty</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut eleifend odio. Mauris eget augue ac est tempor vulputate. Ut ut eros in eros malesuada egestas sed vitae augue. Etiam placerat, ipsum non varius mattis, ligula nulla suscipit mauris, at facilisis enim ex nec orci. Sed nec enim a est molestie mattis ac at felis. Mauris sollicitudin augue eu consequat gravida.</p>
+            </div>
+            <div>
+                <h3>Uiop</h3>
+                <p>Donec a lacus leo. Praesent finibus sagittis lacus, non imperdiet nunc. Mauris sagittis neque quis dolor pretium ullamcorper. Nullam egestas justo tempus velit tempor accumsan. Vivamus dictum massa non quam imperdiet, sed aliquam nunc lobortis. </p>
+            </div>
+            <div>
+                <h3>Qsdfghj</h3>
+                <p>Vestibulum gravida viverra consequat. Vivamus lacinia facilisis metus vitae euismod. Proin venenatis varius sem sit amet pulvinar. Mauris placerat augue consectetur ultricies tristique. Aenean tempor et metus vitae egestas. Nulla quis lacinia nibh, ut vehicula dui. Donec pharetra libero vitae arcu vehicula mollis.</p>
+            </div>
+        </footer>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
